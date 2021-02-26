@@ -1,0 +1,25 @@
+{
+  "email": "E-mail",
+  "password": "Wachtwoord",
+  "confirmPassword": "Bevestig wachtwoord",
+  "username": "Gebruikersnaam",
+  "login": {
+    "connect": "Aansluiting",
+    "notSub": "Niet geregistreerd? Registreer nu"
+  },
+  "signUp": {
+    "subscribe" : "Abonneer u op",
+    "alreadySub": "Al geregistreerd? Hier"
+  },
+  "German": "Duits",
+  "English": "Engels",
+  "French": "Frans",
+  "Italian": "Italiaans",
+  "Japanese": "Japans",
+  "Spanish": "Spaans",
+  "Dutch": "Nederlands",
+  "Polish": "Pools",
+  "Portuguese": "Portugees",
+  "Russian": "Russisch",
+  "Chinese": "Chinees"
+}

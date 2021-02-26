@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "blank",
+  "appId": "io.cuicui.main",
+  "appName": "cuicui",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

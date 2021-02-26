@@ -1,0 +1,25 @@
+{
+  "email": "Email",
+  "password": "Contraseña",
+  "confirmPassword": "Confirmar contraseña",
+  "username": "Nombre de usuario",
+  "login": {
+    "connect": "Conexión",
+    "notSub": "¿No está registrado? Por aquí."
+  },
+  "signUp": {
+    "subscribe" : "Suscríbete",
+    "alreadySub": "¿Ya está registrado? Aquí"
+  },
+  "German": "Alemán",
+  "English": "Inglés",
+  "French": "Francés",
+  "Italian": "Italiano",
+  "Japanese": "Japonés",
+  "Spanish": "Español",
+  "Dutch": "Holandés",
+  "Polish": "Polaco",
+  "Portuguese": "Portugués",
+  "Russian": "Ruso",
+  "Chinese": "Chino"
+}

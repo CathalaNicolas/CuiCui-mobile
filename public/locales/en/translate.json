@@ -1,0 +1,25 @@
+{
+  "email": "Email",
+  "password": "Password",
+  "confirmPassword": "Confirm password",
+  "username": "Username",
+  "login" : {
+    "connect": "Sign In",
+    "notSub": "Not registered? Sign up"
+  },
+  "signUp": {
+    "subscribe" : "Subscribe",
+    "alreadySub": "Already registered? Over here"
+  },
+  "German": "German",
+  "English": "English",
+  "French": "French",
+  "Italian": "Italian",
+  "Japanese": "Japanese",
+  "Spanish": "Spanish",
+  "Dutch": "Dutch",
+  "Polish": "Polish",
+  "Portuguese": "Portuguese",
+  "Russian": "Russian",
+  "Chinese": "Chinese"
+}

@@ -1,0 +1,25 @@
+{
+  "email": "電子メール",
+  "password": "パスワード",
+  "confirmPassword": "パスワードの確認",
+  "username": "ユーザー名",
+  "login": {
+    "connect": "ログイン",
+    "notSub": "登録してないならこっちだ"
+  },
+  "signUp": {
+    "subscribe" : "サブスクライブ",
+    "alreadySub": "すでに登録済みですか？こちらです"
+  },
+  "German": "ドイツ語",
+  "English": "英語",
+  "French": "フレンチ",
+  "Italian": "イタリア語",
+  "Japanese": "にほんご",
+  "Spanish": "スペイン語",
+  "Dutch": "蘭語",
+  "Polish": "蘭語",
+  "Portuguese": "ポルトガル語",
+  "Russian": "ロシア語",
+  "Chinese": "ちゅうごく"
+}

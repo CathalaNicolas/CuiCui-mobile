@@ -1,5 +1,5 @@
 {
-  "name": "blank",
+  "name": "cuicui",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -15,9 +15,12 @@
     "@types/react-dom": "^16.9.10",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
-    "ionicons": "^5.4.0",
+    "i18next": "^19.9.0",
+    "i18next-xhr-backend": "^3.2.2",
+    "ionicons": "^5.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-i18next": "^11.8.8",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",

@@ -1,0 +1,25 @@
+{
+  "email": "电子邮件",
+  "password": "密码",
+  "confirmPassword": "确认密码",
+  "username": "帳號",
+  "login": {
+    "connect": "登录",
+    "notSub": "没有注册？这边请"
+  },
+  "signUp": {
+    "subscribe" : "订阅",
+    "alreadySub": "已经注册了？在这里"
+  },
+  "German": "德国",
+  "English": "英文",
+  "French": "法国人",
+  "Italian": "意大利",
+  "Japanese": "日文",
+  "Spanish": "西班牙语",
+  "Dutch": "荷兰语",
+  "Polish": "波兰语",
+  "Portuguese": "葡萄牙语",
+  "Russian": "俄文",
+  "Chinese": "汉语"
+}
