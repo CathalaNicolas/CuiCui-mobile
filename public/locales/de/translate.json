@@ -8,8 +8,17 @@
     "notSub": "Nicht registriert? Hier entlang, bitte."
   },
   "signUp": {
-    "subscribe" : "Haften",
+    "register" : "Registrieren",
     "alreadySub": "Bereits registriert? Hier entlang"
+    
+  },
+  "error": {
+    "login" : "Ungültige E-Mail oder ungültiges Passwort",
+    "confirmPassword" : "Fehler beim Bestätigen des Passworts",
+    "emailValid": "Muss eine gültige E-Mail sein",
+    "requiredField": "Erforderlich",
+    "lengthMin": "Muss mindestens 5 Zeichen lang sein",
+    "lengthMax": "Muss maximal 32 Zeichen lang sein"
   },
   "German": "Deutsch",
   "English": "Englisch",

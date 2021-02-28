@@ -3,7 +3,10 @@ import { useState } from 'react';
 import { useAuth } from "../auth/authContext";
 import { RouteComponentProps } from "react-router";
 import { sourceLang, compareWith, tagToLang } from '../theme/languages';
+import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import Input, { InputProps } from "../components/Input";
+import { object, string } from "yup";
 import "../translations/i18n";
 import './Signup.css';
 
@@ -20,6 +23,60 @@ const Signup: React.FC<RouteComponentProps> = ({ history }) => {
   const { t, i18n } = useTranslation(['translate']);
   const [selectedAppLang, setSelectedAppLang] = useState<SourceLang>(tagToLang(i18n.language));
 
+  const validationSchema = object().shape({
+    email: string().required().email(),
+    username: string().required().min(5).max(32),
+    password: string().required().min(8),
+    confirmPassword: string().required().min(8)
+  });
+
+  const { control, handleSubmit, errors } = useForm({
+    validationSchema,
+  });
+
+  const formFields: InputProps[] = [
+    {
+      name: "email",
+      component: <IonInput type="email" />,
+      label: t("translate:email"),
+    },
+    {
+      name: "username",
+      component: <IonInput type="text" />,
+      label: t("translate:username"),
+    },
+    {
+      name: "password",
+      component: <IonInput type="password" clearOnEdit={false} />,
+      label: t("translate:password"),
+    },
+    {
+      name: "confirmPassword",
+      component: <IonInput type="password" clearOnEdit={false} />,
+      label: t("translate:confirmPassword"),
+    },
+  ];
+
+  const registerUser = async (data: any) => {
+    console.log(data);
+    if (data.password === data.passwordConfirm) {
+      signUp(data.username, data.email, data.password).then((res) => {
+        logIn(data.email, data.password).then((res) => {
+          history.replace('/home');
+        }).catch((err) => {
+          setError(t("translate:error:login"))
+          setShowError(true);
+        })
+      }).catch((err) => {
+        console.log(err.error.message);
+        setShowError(true);
+      })
+    }
+    else {
+      setError(t("translate:error:confirmPassword"));
+      setShowError(true);
+    }
+  }
 
   return (
     <IonPage>
@@ -53,21 +110,9 @@ const Signup: React.FC<RouteComponentProps> = ({ history }) => {
               </IonCardHeader>
               <IonCardContent>
                 <IonList>
-                  <IonItemDivider />
-                  <IonItem>
-                    <IonInput type="text" inputmode="text" value={username} placeholder={t("translate:username")} onIonChange={e => setUsername(e.detail.value!)}></IonInput>
-                  </IonItem>
-                  <IonItemDivider />
-                  <IonItem>
-                    <IonInput type="email" inputmode="email" value={email} placeholder={t("translate:email")} onIonChange={e => setEmail(e.detail.value!)}></IonInput>
-                  </IonItem>
-                  <IonItemDivider />
-                  <IonItem>
-                    <IonInput type="password" inputmode="text" value={password} placeholder={t("translate:password")} onIonChange={e => setPassword(e.detail.value!)}></IonInput>
-                  </IonItem>
-                  <IonItem>
-                    <IonInput type="password" inputmode="text" value={passwordConfirm} placeholder={t("translate:confirmPassword")} onIonChange={e => setPasswordConfirm(e.detail.value!)}></IonInput>
-                  </IonItem>
+                  {formFields.map((field, index) => (
+                    <Input {...field} control={control} key={index} errors={errors} />
+                  ))}
                 </IonList>
               </IonCardContent>
             </IonCard>
@@ -75,29 +120,11 @@ const Signup: React.FC<RouteComponentProps> = ({ history }) => {
               isOpen={showError}
               onDidDismiss={() => setShowError(false)}
               message={error}
-              duration={400}
+              duration={1000}
             />
           </IonRow>
         </IonGrid>
-        <IonButton expand="block" onClick={async () => {
-          if (password === passwordConfirm) {
-            signUp(username, email, password).then((res) => {
-              logIn(email, password).then((res) => {
-                history.replace('/home');
-              }).catch((err) => {
-                setError(err.error.message)
-                setShowError(true);
-              })
-            }).catch((err) => {
-              setError(err.error.message)
-              setShowError(true);
-            })
-          }
-          else {
-            setError('Erreur confirmation mot de passe');
-            setShowError(true);
-          }
-        }}>{t("translate:signUp:subscribe")} </IonButton>
+        <IonButton expand="block" onClick={handleSubmit(registerUser)} >{t("translate:signUp:register")} </IonButton>
       </IonContent>
       <IonFooter>
         <IonList>

@@ -8,8 +8,16 @@
     "notSub": "Nie jesteś zarejestrowany? Zarejestruj się teraz"
   },
   "signUp": {
-    "subscribe" : "Subskrybuj",
-    "alreadySub": "Already registered? Over here"
+    "register": "Rejestr",
+    "alreadySub": "Jesteś już zarejestrowany? Tutaj"
+  },
+  "error": {
+    "login": "Nieprawidłowy adres e-mail lub hasło",
+    "confirmPassword": "Błąd potwierdzenia hasła",
+    "emailValid": "Musi to być ważny adres e-mail",
+    "requiredField": "Wymagany",
+    "lengthMin": "Musi mieć co najmniej 5 znaków",
+    "lengthMax": "Musi mieć co najwyżej 32 znaki"
   },
   "German": "Niemiecki",
   "English": "Angielski",

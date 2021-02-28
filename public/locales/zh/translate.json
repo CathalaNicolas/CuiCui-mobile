@@ -8,12 +8,20 @@
     "notSub": "没有注册？这边请"
   },
   "signUp": {
-    "subscribe" : "订阅",
+    "register": "注册",
     "alreadySub": "已经注册了？在这里"
+  },
+  "error": {
+    "login": "无效的电子邮件或密码",
+    "confirmPassword": "密码确认错误",
+    "emailValid": "必须是一个有效的电子邮件",
+    "requiredField": "必填",
+    "lengthMin": "必须至少5个字符",
+    "lengthMax": "最多必须是32个字符"
   },
   "German": "德国",
   "English": "英文",
-  "French": "法国人",
+  "French": "法语",
   "Italian": "意大利",
   "Japanese": "日文",
   "Spanish": "西班牙语",

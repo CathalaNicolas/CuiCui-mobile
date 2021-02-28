@@ -4,6 +4,7 @@ import { powerOutline, settingsOutline, personOutline, cameraOutline, documentOu
 import axios from "axios";
 import { useState } from 'react';
 import { RouteComponentProps } from "react-router";
+import { useTranslation } from "react-i18next";
 import { useAuth } from '../auth/authContext';
 import './Home.css';
 
@@ -14,6 +15,7 @@ type TargetLang = typeof targetLang[number];
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const [textInput, setTextInput] = useState<string>();
   const [textOutput, setTextOutput] = useState<string>();
+  const { t, i18n } = useTranslation(['translate']);
   const [selectedSourceLang, setSelectedSourceLang] = useState<SourceLang>(sourceLang[0]);
   const [selectedTargetLang, setSelectedTargetLang] = useState<TargetLang>(targetLang[1]);
   const { authInfo, logOut } = useAuth()!;
@@ -71,7 +73,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
                   onIonChange={e => setSelectedSourceLang(e.detail.value)}>
                   {sourceLang.map(lang => (
                     <IonSelectOption key={lang.id} value={lang}>
-                      {lang.lang}
+                      {t(`translate:${lang.lang}`)}
                     </IonSelectOption>
                   ))}
                 </IonSelect>
@@ -114,7 +116,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
                   onIonChange={e => setSelectedTargetLang(e.detail.value)}>
                   {targetLang.map(lang => (
                     <IonSelectOption key={lang.id} value={lang}>
-                      {lang.lang}
+                      {t(`translate:${lang.lang}`)}
                     </IonSelectOption>
                   ))}
                 </IonSelect>

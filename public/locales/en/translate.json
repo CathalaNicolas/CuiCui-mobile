@@ -8,8 +8,16 @@
     "notSub": "Not registered? Sign up"
   },
   "signUp": {
-    "subscribe" : "Subscribe",
+    "register" : "Register",
     "alreadySub": "Already registered? Over here"
+  },
+  "error": {
+    "login" : "Invalid Email or password",
+    "confirmPassword" : "Error confirming the password",
+    "emailValid": "Must be a valid email",
+    "requiredField": "Required",
+    "lengthMin": "Must be at least 5 characters",
+    "lengthMax": "Must be at most 32 characters"
   },
   "German": "German",
   "English": "English",

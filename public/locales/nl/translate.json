@@ -8,8 +8,16 @@
     "notSub": "Niet geregistreerd? Registreer nu"
   },
   "signUp": {
-    "subscribe" : "Abonneer u op",
+    "register": "Registreren",
     "alreadySub": "Al geregistreerd? Hier"
+  },
+  "error": {
+    "login": "Ongeldig e-mail of wachtwoord",
+    "confirmPassword": "Fout bij het bevestigen van het wachtwoord",
+    "emailValid": "Moet een geldig emailadres zijn",
+    "requiredField": "Vereist",
+    "lengthMin": "Moet ten minste 5 tekens bevatten",
+    "lengthMax": "Moet uit maximaal 32 tekens bestaan"
   },
   "German": "Duits",
   "English": "Engels",

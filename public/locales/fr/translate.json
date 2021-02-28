@@ -8,8 +8,16 @@
     "notSub": "Pas inscrit ? Par ici"
   },
   "signUp": {
-    "subscribe" : "S'inscrire",
+    "register" : "S'inscrire",
     "alreadySub": "Déjà inscrit ? Par ici"
+  },
+  "error": {
+    "login" : "Email ou mot de passe invalide",
+    "confirmPassword" : "Erreur de la confirmation du mot de passe",
+    "emailValid": "Doit être un courriel valide",
+    "requiredField": "Requis",
+    "lengthMin": "Doit comporter au moins 5 caractères",
+    "lengthMax": "Doit comporter au maximum 32 caractères"
   },
   "German": "Allemand",
   "English": "Anglais",

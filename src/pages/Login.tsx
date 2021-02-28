@@ -66,7 +66,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
                 isOpen={showError}
                 onDidDismiss={() => setShowError(false)}
                 message={error}
-                duration={400}
+                duration={1000}
               />
             </IonCol>
           </IonRow>
@@ -75,9 +75,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
           logIn(email, password).then((res) => {
             history.replace("/home");
           }).catch((err) => {
-
-            console.log(err)
-            setError(err.error.message)
+            setError(t("translate:error:login"))
             setShowError(true);
           });
         }}>{t("translate:login:connect")}</IonButton>

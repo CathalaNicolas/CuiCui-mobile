@@ -8,8 +8,16 @@
     "notSub": "登録してないならこっちだ"
   },
   "signUp": {
-    "subscribe" : "サブスクライブ",
+    "register": "登録",
     "alreadySub": "すでに登録済みですか？こちらです"
+  },
+  "error": {
+    "login": "無効なEメールまたはパスワード",
+    "confirmPassword": "パスワードの確認エラー",
+    "emailValid": "有効な電子メールである必要があります",
+    "requiredField": "必須",
+    "lengthMin": "5文字以上でお願いします",
+    "lengthMax": "最大32文字まで"
   },
   "German": "ドイツ語",
   "English": "英語",
