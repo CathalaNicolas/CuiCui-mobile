@@ -1,5 +1,5 @@
 # CuiCui-mobile
-##Résumé
+## Résumé
 CuiCui est une application cross-platform (Web/Mobile, Ios/Android) de traduction de textes, de documents, photos, ou de messages vocaux. 
 Basée sur une technologie de réseaux de neurones, l’API de DeepL permet de traduire des textes vers des langues qui n’ont pas de racines communes (exemple : traduction Français -> Chinois).
 
