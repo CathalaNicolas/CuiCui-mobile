@@ -112,7 +112,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
       photo: file.data,
     }
 
-    axios.post('http://localhost:8080/translate/photo', params, {
+    axios.post('https://cuicui-back.herokuapp.com/translate/photo', params, {
       headers: {
         'Authorization': `Bearer ${authInfo.user.token}`,
         'Content-Type': 'application/json'
@@ -153,7 +153,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
     form.append('target_lang', selectedTargetLang.tag)
     form.append('source_lang', selectedSourceLang.tag)
 
-    axios.post('http://localhost:8080/translate/document', form, {
+    axios.post('https://cuicui-back.herokuapp.com/translate/document', form, {
       headers: {
         'Authorization': `Bearer ${authInfo.user.token}`,
         'Content-Type': 'multipart/form-data;boundary="boundary"'
