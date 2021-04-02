@@ -8,26 +8,28 @@
     "notSub": "Non registrato? Da questa parte"
   },
   "signUp": {
-    "register" : "Registra",
+    "register": "Registra",
     "alreadySub": "Già registrato? Qui"
   },
   "error": {
-    "login" : "Email o password non valida",
-    "confirmPassword" : "Errore nella conferma della password",
+    "login": "Email o password non valida",
+    "confirmPassword": "Errore nella conferma della password",
     "emailValid": "Deve essere un'email valida",
     "requiredField": "Richiesto",
     "lengthMin": "Deve essere di almeno 5 caratteri",
     "lengthMax": "Deve essere al massimo di 32 caratteri"
   },
-  "German": "Tedesco",
-  "English": "Inglese",
-  "French": "Francese",
-  "Italian": "Italiano",
-  "Japanese": "Giapponese",
-  "Spanish": "Spagnolo",
-  "Dutch": "Olandese",
-  "Polish": "Polacco",
-  "Portuguese": "Portoghese",
-  "Russian": "Russo",
-  "Chinese": "Cinese"
+  "languages": {
+    "German": "Tedesco",
+    "English": "Inglese",
+    "French": "Francese",
+    "Italian": "Italiano",
+    "Japanese": "Giapponese",
+    "Spanish": "Spagnolo",
+    "Dutch": "Olandese",
+    "Polish": "Polacco",
+    "Portuguese": "Portoghese",
+    "Russian": "Russo",
+    "Chinese": "Cinese"
+  }
 }

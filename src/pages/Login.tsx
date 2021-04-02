@@ -1,13 +1,12 @@
-import { IonContent, IonHeader, IonFooter, IonPage, IonChip, IonGrid, IonRow, IonCol, IonLabel, IonSelect, IonSelectOption, IonImg, IonTitle, IonToast, IonInput, IonItem, IonItemDivider, IonList, IonButton, IonCard, IonCardHeader, IonCardContent, IonText } from '@ionic/react';
+import { IonContent, IonHeader, IonFooter, IonPage, IonLoading, IonGrid, IonRow, IonCol, IonLabel, IonSelect, IonSelectOption, IonImg, IonTitle, IonToast, IonInput, IonItem, IonItemDivider, IonList, IonButton, IonCard, IonCardHeader, IonCardContent, IonText } from '@ionic/react';
 import { useState } from 'react';
 import { useAuth } from "../auth/authContext";
-import { sourceLang, compareWith, tagToLang } from '../theme/languages';
+import SelectLang, { LangInterface, tagToLang } from '../components/SelectLang';
 import { useTranslation } from "react-i18next";
 import "../translations/i18n";
 import { RouteComponentProps } from "react-router";
 import './Login.css';
 
-type SourceLang = typeof sourceLang[number];
 
 const Login: React.FC<RouteComponentProps> = ({ history }) => {
   let { authInfo, logIn } = useAuth()!;
@@ -16,50 +15,40 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
   const [error, setError] = useState<string>();
   const { t, i18n } = useTranslation(['translate']);
   const [showError, setShowError] = useState<boolean>(false);
-  const [selectedAppLang, setSelectedAppLang] = useState<SourceLang>(tagToLang(i18n.language));
+  const [selectedAppLang, setSelectedAppLang] = useState<LangInterface>(tagToLang(i18n.language));
+  const [showLoading, setShowLoading] = useState(false);
+
+  const handleSelectAppLang = async (lang: LangInterface) => {
+    setSelectedAppLang(lang);
+    i18n.changeLanguage(lang.tag.toLowerCase());
+  }
 
   return (
     <IonPage>
       <IonHeader>
         <IonTitle>Cui Cui</IonTitle>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent  style={{ "--background": "#ffdb9c" }}>
         <IonGrid>
           <IonRow style={{ "justifyContent": "flex-end" }}>
             <IonCol size="auto">
-              <IonChip color="primary">
-                <IonImg src={selectedAppLang.img} style={{ "width": "30px" }} />
-                <IonSelect compareWith={compareWith} value={selectedAppLang}
-                  onIonChange={e => {
-                    setSelectedAppLang(e.detail.value);
-                    i18n.changeLanguage((e.detail.value.tag).toString().toLowerCase());
-                  }}>
-                  {sourceLang.map(lang => (
-                    <IonSelectOption key={lang.id} value={lang}>
-                      {t(`translate:${lang.lang}`)}
-                    </IonSelectOption>
-                  ))}
-                </IonSelect>
-              </IonChip>
+              <SelectLang appLang={selectedAppLang} selectedLang={selectedAppLang} setLang={handleSelectAppLang} />
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
-              <IonCard>
+              <IonCard style={{ "--background": "#fef5e6" }}>
                 <IonCardHeader>
                 </IonCardHeader>
                 <IonCardContent >
-                  <IonList>
-                    <IonItemDivider />
-                    <IonItem >
-                      <IonInput type="email" value={email} placeholder={t("translate:email")} onIonChange={e => setEmail(e.detail.value!)}></IonInput>
-                    </IonItem >
-                    <IonItemDivider />
-                    <IonItem >
-                      <IonInput type="password" value={password} placeholder={t("translate:password")} onIonChange={e => setPassword(e.detail.value!)}></IonInput>
-                    </IonItem>
-
-                  </IonList>
+                  <IonItemDivider style={{ "--background": "#fef5e6" }} />
+                  <IonItem style={{ "--background": "#fef5e6" }} >
+                    <IonInput type="email" value={email} placeholder={t("translate:email")} onIonChange={e => setEmail(e.detail.value!)}></IonInput>
+                  </IonItem >
+                  <IonItemDivider style={{ "--background": "#fef5e6" }} />
+                  <IonItem style={{ "--background": "#fef5e6" }}>
+                    <IonInput type="password" value={password} placeholder={t("translate:password")} onIonChange={e => setPassword(e.detail.value!)}></IonInput>
+                  </IonItem>
                 </IonCardContent>
               </IonCard>
               <IonToast
@@ -72,15 +61,24 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
           </IonRow>
         </IonGrid>
         <IonButton style={{ "background": "#383a3e" }} expand="block" onClick={async () => {
+          setShowLoading(true);
           logIn(email, password).then((res) => {
+            setShowLoading(false);
             history.replace("/home");
           }).catch((err) => {
             setError(t("translate:error:login"))
             setShowError(true);
           });
+          setShowLoading(false);
         }}>{t("translate:login:connect")}</IonButton>
+        <IonLoading
+          isOpen={showLoading}
+          onDidDismiss={() => setShowLoading(false)}
+          message={'Please wait...'}
+          duration={5000}
+        />
       </IonContent>
-      <IonFooter>
+      <IonFooter style={{ "--background": "#ffdb9c" }}>
         <IonList>
           <IonItem lines="none" button onClick={async () => { history.replace("/signup") }} slot="end">
 

@@ -3,31 +3,33 @@
   "password": "Password",
   "confirmPassword": "Confirm password",
   "username": "Username",
-  "login" : {
+  "login": {
     "connect": "Sign In",
     "notSub": "Not registered? Sign up"
   },
   "signUp": {
-    "register" : "Register",
+    "register": "Register",
     "alreadySub": "Already registered? Over here"
   },
   "error": {
-    "login" : "Invalid Email or password",
-    "confirmPassword" : "Error confirming the password",
+    "login": "Invalid Email or password",
+    "confirmPassword": "Error confirming the password",
     "emailValid": "Must be a valid email",
     "requiredField": "Required",
     "lengthMin": "Must be at least 5 characters",
     "lengthMax": "Must be at most 32 characters"
   },
-  "German": "German",
-  "English": "English",
-  "French": "French",
-  "Italian": "Italian",
-  "Japanese": "Japanese",
-  "Spanish": "Spanish",
-  "Dutch": "Dutch",
-  "Polish": "Polish",
-  "Portuguese": "Portuguese",
-  "Russian": "Russian",
-  "Chinese": "Chinese"
+  "languages": {
+    "German": "German",
+    "English": "English",
+    "French": "French",
+    "Italian": "Italian",
+    "Japanese": "Japanese",
+    "Spanish": "Spanish",
+    "Dutch": "Dutch",
+    "Polish": "Polish",
+    "Portuguese": "Portuguese",
+    "Russian": "Russian",
+    "Chinese": "Chinese"
+  }
 }

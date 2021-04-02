@@ -19,15 +19,17 @@
     "lengthMin": "Deve ter pelo menos 5 caracteres",
     "lengthMax": "Deve ter, no máximo, 32 caracteres"
   },
-  "German": "Alemão",
-  "English": "Inglês",
-  "French": "Francês",
-  "Italian": "Italiano",
-  "Japanese": "Japonês",
-  "Spanish": "Espanhol",
-  "Dutch": "Holandês",
-  "Polish": "Polaco",
-  "Portuguese": "Português",
-  "Russian": "Russo",
-  "Chinese": "Chinês"
+  "languages": {
+    "German": "Alemão",
+    "English": "Inglês",
+    "French": "Francês",
+    "Italian": "Italiano",
+    "Japanese": "Japonês",
+    "Spanish": "Espanhol",
+    "Dutch": "Holandês",
+    "Polish": "Polaco",
+    "Portuguese": "Português",
+    "Russian": "Russo",
+    "Chinese": "Chinês"
+  }
 }

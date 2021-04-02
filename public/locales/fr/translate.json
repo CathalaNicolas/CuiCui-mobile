@@ -8,26 +8,28 @@
     "notSub": "Pas inscrit ? Par ici"
   },
   "signUp": {
-    "register" : "S'inscrire",
+    "register": "S'inscrire",
     "alreadySub": "Déjà inscrit ? Par ici"
   },
   "error": {
-    "login" : "Email ou mot de passe invalide",
-    "confirmPassword" : "Erreur de la confirmation du mot de passe",
+    "login": "Email ou mot de passe invalide",
+    "confirmPassword": "Erreur de la confirmation du mot de passe",
     "emailValid": "Doit être un courriel valide",
     "requiredField": "Requis",
     "lengthMin": "Doit comporter au moins 5 caractères",
     "lengthMax": "Doit comporter au maximum 32 caractères"
   },
-  "German": "Allemand",
-  "English": "Anglais",
-  "French": "Français",
-  "Italian": "Italien",
-  "Japanese": "Japonais",
-  "Spanish": "Espagnol",
-  "Dutch": "Néerlandais",
-  "Polish": "Polonais",
-  "Portuguese": "Portuguais",
-  "Russian": "Russe",
-  "Chinese": "Chinois"
+  "languages": {
+    "German": "Allemand",
+    "English": "Anglais",
+    "French": "Français",
+    "Italian": "Italien",
+    "Japanese": "Japonais",
+    "Spanish": "Espagnol",
+    "Dutch": "Néerlandais",
+    "Polish": "Polonais",
+    "Portuguese": "Portuguais",
+    "Russian": "Russe",
+    "Chinese": "Chinois"
+  }
 }

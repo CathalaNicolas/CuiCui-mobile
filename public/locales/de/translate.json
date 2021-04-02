@@ -8,27 +8,28 @@
     "notSub": "Nicht registriert? Hier entlang, bitte."
   },
   "signUp": {
-    "register" : "Registrieren",
+    "register": "Registrieren",
     "alreadySub": "Bereits registriert? Hier entlang"
-    
   },
   "error": {
-    "login" : "Ungültige E-Mail oder ungültiges Passwort",
-    "confirmPassword" : "Fehler beim Bestätigen des Passworts",
+    "login": "Ungültige E-Mail oder ungültiges Passwort",
+    "confirmPassword": "Fehler beim Bestätigen des Passworts",
     "emailValid": "Muss eine gültige E-Mail sein",
     "requiredField": "Erforderlich",
     "lengthMin": "Muss mindestens 5 Zeichen lang sein",
     "lengthMax": "Muss maximal 32 Zeichen lang sein"
   },
-  "German": "Deutsch",
-  "English": "Englisch",
-  "French": "Französisch",
-  "Italian": "Italienisch",
-  "Japanese": "Japanisch",
-  "Spanish": "Spanisch",
-  "Dutch": "Niederländisch",
-  "Polish": "Polnisch",
-  "Portuguese": "Portugiesisch",
-  "Russian": "Russisch",
-  "Chinese": "Chinesisch"
+  "languages": {
+    "German": "Deutsch",
+    "English": "Englisch",
+    "French": "Französisch",
+    "Italian": "Italienisch",
+    "Japanese": "Japanisch",
+    "Spanish": "Spanisch",
+    "Dutch": "Niederländisch",
+    "Polish": "Polnisch",
+    "Portuguese": "Portugiesisch",
+    "Russian": "Russisch",
+    "Chinese": "Chinesisch"
+  }
 }

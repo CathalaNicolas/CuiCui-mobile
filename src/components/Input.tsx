@@ -37,7 +37,7 @@ const Input: FC<InputProps> = ({ name, control, component, label, errors }) => {
   
   return (
     <>
-      <IonItem>
+      <IonItem style={{ "--background": "#fef5e6" }}>
         {label && <IonLabel position="floating">{label}</IonLabel>}
         <Controller
           as={

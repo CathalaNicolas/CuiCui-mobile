@@ -8,26 +8,28 @@
     "notSub": "¿No está registrado? Por aquí."
   },
   "signUp": {
-    "register" : "Registro",
+    "register": "Registro",
     "alreadySub": "¿Ya está registrado? Aquí"
   },
   "error": {
-    "login" : "Email o contraseña inválidos",
-    "confirmPassword" : "Error al confirmar la contraseña",
+    "login": "Email o contraseña inválidos",
+    "confirmPassword": "Error al confirmar la contraseña",
     "emailValid": "Debe ser un email válido",
     "requiredField": "Requerido",
     "lengthMin": "Debe tener al menos 5 caracteres",
     "lengthMax": "Debe tener como máximo 32 caracteres"
   },
-  "German": "Alemán",
-  "English": "Inglés",
-  "French": "Francés",
-  "Italian": "Italiano",
-  "Japanese": "Japonés",
-  "Spanish": "Español",
-  "Dutch": "Holandés",
-  "Polish": "Polaco",
-  "Portuguese": "Portugués",
-  "Russian": "Ruso",
-  "Chinese": "Chino"
+  "languages": {
+    "German": "Alemán",
+    "English": "Inglés",
+    "French": "Francés",
+    "Italian": "Italiano",
+    "Japanese": "Japonés",
+    "Spanish": "Español",
+    "Dutch": "Holandés",
+    "Polish": "Polaco",
+    "Portuguese": "Portugués",
+    "Russian": "Ruso",
+    "Chinese": "Chino"
+  }
 }

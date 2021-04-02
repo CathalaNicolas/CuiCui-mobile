@@ -19,15 +19,17 @@
     "lengthMin": "Moet ten minste 5 tekens bevatten",
     "lengthMax": "Moet uit maximaal 32 tekens bestaan"
   },
-  "German": "Duits",
-  "English": "Engels",
-  "French": "Frans",
-  "Italian": "Italiaans",
-  "Japanese": "Japans",
-  "Spanish": "Spaans",
-  "Dutch": "Nederlands",
-  "Polish": "Pools",
-  "Portuguese": "Portugees",
-  "Russian": "Russisch",
-  "Chinese": "Chinees"
+  "languages": {
+    "German": "Duits",
+    "English": "Engels",
+    "French": "Frans",
+    "Italian": "Italiaans",
+    "Japanese": "Japans",
+    "Spanish": "Spaans",
+    "Dutch": "Nederlands",
+    "Polish": "Pools",
+    "Portuguese": "Portugees",
+    "Russian": "Russisch",
+    "Chinese": "Chinees"
+  }
 }

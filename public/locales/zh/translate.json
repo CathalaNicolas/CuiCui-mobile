@@ -19,15 +19,17 @@
     "lengthMin": "必须至少5个字符",
     "lengthMax": "最多必须是32个字符"
   },
-  "German": "德国",
-  "English": "英文",
-  "French": "法语",
-  "Italian": "意大利",
-  "Japanese": "日文",
-  "Spanish": "西班牙语",
-  "Dutch": "荷兰语",
-  "Polish": "波兰语",
-  "Portuguese": "葡萄牙语",
-  "Russian": "俄文",
-  "Chinese": "汉语"
+  "languages": {
+    "German": "德国",
+    "English": "英文",
+    "French": "法语",
+    "Italian": "意大利",
+    "Japanese": "日文",
+    "Spanish": "西班牙语",
+    "Dutch": "荷兰语",
+    "Polish": "波兰语",
+    "Portuguese": "葡萄牙语",
+    "Russian": "俄文",
+    "Chinese": "汉语"
+  }
 }

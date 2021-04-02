@@ -19,15 +19,17 @@
     "lengthMin": "5文字以上でお願いします",
     "lengthMax": "最大32文字まで"
   },
-  "German": "ドイツ語",
-  "English": "英語",
-  "French": "フレンチ",
-  "Italian": "イタリア語",
-  "Japanese": "にほんご",
-  "Spanish": "スペイン語",
-  "Dutch": "蘭語",
-  "Polish": "蘭語",
-  "Portuguese": "ポルトガル語",
-  "Russian": "ロシア語",
-  "Chinese": "ちゅうごく"
+  "languages": {
+    "German": "ドイツ語",
+    "English": "英語",
+    "French": "フレンチ",
+    "Italian": "イタリア語",
+    "Japanese": "にほんご",
+    "Spanish": "スペイン語",
+    "Dutch": "蘭語",
+    "Polish": "蘭語",
+    "Portuguese": "ポルトガル語",
+    "Russian": "ロシア語",
+    "Chinese": "ちゅうごく"
+  }
 }
